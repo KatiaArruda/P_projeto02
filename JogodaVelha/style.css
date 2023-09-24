@@ -49,4 +49,10 @@ h2 {
   display: grid;
   place-content: center;
   font-size: 5rem;
+  color: #666;
+}
+
+.container2 span.win {
+  background-color: #666;
+  color: #ffffff;
 }
