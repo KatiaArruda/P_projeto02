@@ -45,7 +45,6 @@ h2 {
 
 .container2 span {
   background-color: #ffe4c4;
-  cursor: pointer;
   display: grid;
   place-content: center;
   font-size: 5rem;
@@ -55,4 +54,8 @@ h2 {
 .container2 span.win {
   background-color: #666;
   color: #ffffff;
+}
+
+.cursor-hand {
+  cursor: pointer;
 }
