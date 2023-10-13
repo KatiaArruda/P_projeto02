@@ -15,43 +15,42 @@ h2 {
   text-align: justify;
 }
 
-.container1 > .p1 > label {
+.containerA > .pA > label {
   background-color: #bc8f8f;
   color: #ffffff;
   line-height: 2rem;
 }
 
-.container1 > .p2 > label {
+.containerA > .pB > label {
   background-color: #bc8f8f;
   color: #ffffff;
   line-height: 2rem;
 }
 
-.container1 > .button {
+.containerA > .button {
   line-height: 2rem;
 }
 
-.container2 {
+#containerB {
   background-color: #bc8f8f;
   display: grid;
   grid-template-columns: 6rem 6rem 6rem;
   grid-template-rows: 6rem 6rem 6rem;
-  gap: 0.6rem;
-  margin-bottom: 2rem;
-  max-width: 20rem;
-  padding: 100px;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 19rem;
   place-content: center;
 }
 
-.container2 span {
-  background-color: #ffe4c4;
+#containerB span {
+  background-color: #ddd;
   display: grid;
   place-content: center;
   font-size: 5rem;
   color: #666;
 }
 
-.container2 span.win {
+#containerB span.win {
   background-color: #666;
   color: #ffffff;
 }

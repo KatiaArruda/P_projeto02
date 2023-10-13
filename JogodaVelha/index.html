@@ -3,28 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jogo da Velha</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Jogo da Velha</title>
   </head>
   <body>
     <h1>Jogo da Velha</h1>
     <hr />
     <br />
-    <div class="container1">
-      <div class="p1">
-        <label for="Player1">X</label>
-        <input type="text" id="Player1" placeholder="Nome do Jogador 1" />
+    <div class="containerA">
+      <div class="pA">
+        <label for="player1">X</label>
+        <input type="text" id="player1" placeholder="Nome do Jogador 1" />
       </div>
-      <div class="p2">
-        <label for="Player2">O</label>
-        <input type="text" id="Player2" placeholder="Nome do Jogador 2" />
-      </div>
-      <div class="button">
-        <button id="start">Inicio</button>
+      <div class="pB">
+        <label for="player2">O</label>
+        <input type="text" id="player2" placeholder="Nome do Jogador 2" />
       </div>
     </div>
+    <div class="button">
+      <button id="start">Início</button>
+    </div>
     <h2>Jogar:<span id="turnPlayer"></span></h2>
-    <div class="container2">
+    <section id="containerB">
       <span class="cursor-hand" data-region="linha_1_coluna_1"></span>
       <span class="cursor-hand" data-region="linha_1_coluna_2"></span>
       <span class="cursor-hand" data-region="linha_1_coluna_3"></span>
@@ -34,6 +35,6 @@
       <span class="cursor-hand" data-region="linha_3_coluna_1"></span>
       <span class="cursor-hand" data-region="linha_3_coluna_2"></span>
       <span class="cursor-hand" data-region="linha_3_coluna_3"></span>
-    </div>
+    </section>
   </body>
 </html>
