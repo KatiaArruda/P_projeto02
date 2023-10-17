@@ -4,7 +4,8 @@ let turnPlayer = ''
 
 function updateTitle() {
   const playerInput = document.getElementById(turnPlayer)
-  document.getElementById('turnPlayer').inderText = playerInput.value
+  document.getElementById('turnPlayer').innerText = playerInput.value
+  console.log(turnPlayer)
 }
 
 function initializeGame() {
@@ -85,12 +86,18 @@ function getWinRegions() {
 function handleWin(regions) {
   regions.forEach(function (region) {
     document
-      .querySelector('[data-region = "' + region + '"]')
+      .querySelector('[data-region="' + region + '"]')
       .classList.add('win')
   })
   const playerName = document.getElementById(turnPlayer).value
   document.querySelector('h2').innerHTML =
-    playerName + ', você' + ' ' + 'venceu!' + '... Parabéns :)'
+    playerName + ', você' + ' ' + 'venceu!' + '...Parabéns :)'
+
+  const clearPlayer1 = document.getElementById('player1')
+  clearPlayer1.value = ''
+
+  const clearPlayer2 = document.getElementById('player2')
+  clearPlayer2.value = ''
 }
 
 function handleBoardClick(ev) {
